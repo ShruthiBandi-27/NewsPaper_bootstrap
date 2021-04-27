@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .main{
+            background-color:black;
+           
+
+        }
+        
+        .hr{
+            margin:3px;
+            background-color: gray;
+           /* width:1060px;*/
+            border-width: 2px;
+        
+        }
+        
+        .red_header{
+            border-bottom: 25px solid rgb(190, 6, 6);
+            border-right: 7px solid transparent;
+            height: 0;
+            width: 6em;
+            text-align:center;
+            color:rgb(228, 217, 217);
+            position: relative;
+            top: 15px;
+        }
+        .pic{
+            background-color:rgb(167, 166, 166);
+            width: 100%;
+            height:100px;
+        }
+        .main_headings{
+            font-size:1em;
+            line-height:1.1;
+            font-weight: 549;
+        }
+        .sub_heading{
+            font-weight:700;
+        }
+        .circle{
+            position:absolute;
+            bottom:10px;
+            right: 10px;
+            border-radius: 50%;
+            width:40px;
+            height:40px;
+            background-color: black;
+            font-size: 12px;
+            color:white;
+            padding-right:5px;
+            padding-left: 8px;
+        }
+        p{
+            text-align: justify;
+            font-size: 10px;
+            
+        }
+        img{
+          
+            max-height: 100%;
+            width: 100%;
+            padding: 10px;
+            
+        }
+       
+        @media(max-width:576px){
+            .heading{
+                font-size:2.5em;
+                font-weight: 720;
+                text-align: center;
+            }
+            .hr{
+                width:100%;
+            }
+            .content{
+                font-size:4.2px;
+            }
+            .main_headings{
+                font-size:0.8em; 
+            }
+            .circle{
+                position:relative;
+                top:50px;
+                left: 70px;
+            }
+            pre{
+                font-size: 10px;
+            }
+            
+        }
+        @media(min-width:576px){
+            .heading{
+                font-size:2.8em;
+                font-weight: 720;
+                text-align:center;
+            }
+            .content{
+                font-size:4.8px;
+            }
+            .hr{
+                width:100%;
+            }
+           
+          
+        }
+        @media(min-width:768px){
+            .heading{
+                font-size:4em;
+                font-weight: 720;
+            }
+            .content{
+                font-size:6.5px;
+            }
+            .hr{
+                width:100%;
+            }
+        }
+        @media(min-width:992px){
+            .heading{
+                font-size:3.5em;
+                font-weight: 720;
+            }
+            .content{
+                font-size:5.8px;
+            }
+            .hr{
+                width:100%;
+            }
+           
+        }
+        @media(min-width:1200px){
+            .heading{
+                font-size:4.3em;
+                font-weight: 720;
+            }
+            .hr{
+                width:100%;
+            }
+            .content{
+                font-size:7px;
+            }
+          
+        }
+       
+       
+       
+       
+    </style>
+
+</head>
+
+<body>
+    <br>
+    
+    <div class="container main p-4 m-auto" >
+       <ul class="nav nav-tabs">
+           <li class="nav-item"><a href="#page1" class="nav-link active" data-toggle="tab">Page1</a></li>
+           <li class="nav-item"><a href="#page2" class="nav-link" data-toggle="tab">Page2</a></li>
+       </ul>
+       <br>
+       <div class="tab-content">
+            <div class="tab-pane active" id="page1">
+                <div class="row">
+                    <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 p-4 m-auto" style="background-color: white;">
+                        <div class="row">
+                            <div class="col-5  col-md-7 col-lg-8 col-xl-9 ">
+                                <p style="font-size: 10px;margin:0px;"><b>25 lorem ipsum</b></p>
+                            </div>
+                            <div class="col-7 col-md-5 col-lg-4 col-xl-3 ">
+                                <p style="font-size: 10px;margin:0px;"><b>lorem ipsum dolor sit ametquis </b></p>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            
+                            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                                <hr  class="hr">
+                                <p style="padding:0px;margin:0px;" class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius orci et risus malesuada, nec tristique arcu volutpat.Vestibulum ultrices dictum nunc in aliquet. Etiam quis vestibulum purus.. Mauris dictum congue lectus.</p>
+                                <hr class="hr">
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                            <!--<h1 style="font-size: 115px;background-color: violet;margin-top:-100px;">NEWS DAILY WEEKLY</h1>-->
+                                <h1 class="heading"  >NEWS DAILY WEEKLY</h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!--<div class=" col-4 col-sm-4">--><div class=" col-6 col-sm-6 col-md-6 col-lg-4 ">
+                            <div class="red_header" style="position:static">
+                                <b>Today 01</b>
+                            </div>
+                            <div>
+                                <p class="pt-2 mb-2 main_headings"><b>Morbi malesuada nisl quis varius mollis Aliquam sit amet metus ac augue</b></p>
+                            </div>
+                            <div>
+                                <p class="py-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus dolor vehicula, mattis leo. Nam eget laoreet elit. </p>
+                                <p >Nullam eget fermentum erat, nec congue metus. Integer sed libero faucibus, faucibus felis efficitur, sagittis dolor. Vestibulum ornare, urna ac vestibulum dignissim, eros dui bibendum arcu, vitae luctus nisl risus in sapien. Suspendisse orci ipsum, laoreet eget fringilla non, venenatis ut ex. Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                <p>Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                </div>
+                            </div>
+                            <!--<div class="col-8 col-sm-8 col-lg-8 ">--><div class="col-6 col-sm-6 col-md-6 col-lg-8 ">
+                                <div class="pic" style="height:100%;">
+                                   <!--- <div class="circle"style="position:absolute;right:20px;">
+                                        <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                        <span style="text-align: center;position: relative;top:5px; left:6px">40</span>
+                                    </div>
+                                    <div class="circle" style="position:relative;left:18em;top: 41em;">
+                                        <p style="padding-top:5px;text-align: center;">Page 40</p>
+                                    </div>-->
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-4 col-sm-4">
+                                <div class="red_header" ><b>25 12 34</b></div>
+                                <div class="pic">
+                                   <!-- <div class="circle" style="position:relative;top:50px;left:165px;" >
+                                        <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                        <span style="text-align: center;position: relative;top:5px; left:6px">25</span>
+                                    </div>
+                                    <div class="circle">
+                                        <p style="padding-top:5px;text-align: center;">Page 25</p>
+                                    </div>-->
+                                </div>
+                                <div>
+                                    <p class="pt-2  mb-2 sub_heading" ><b>Curabitur a lacus malesuada</b></p>
+                                    <p class="py-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus. </p>
+                                    <p >Nullam eget fermentum erat, nec congue metus. Integer sed libero faucibus, faucibus felis efficitur, sagittis dolor. Vestibulum ornare, urna ac vestibulum dignissim, eros dui bibendum arcu, vitae luctus nisl risus in sapien. Suspendisse orci ipsum, laoreet eget fringilla non, venenatis ut ex. Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                    <p>Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel Donec a ornare tellus, hendrerit pretium lorem.Quisque risus arcu, tempus sed sem eget, vulputate sodales tellus. Maecenas interdum erat a convallis efficitur.</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4">
+                                <div class="red_header"><b>25 12 34</b></div>
+                                <div class="pic">
+                                   <!-- <div class="circle" style="position:relative;top:50px;left:165px;" >
+                                        <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                        <span style="text-align: center;position: relative;top:5px; left:6px">18</span>
+                                    </div>
+                                    <div class="circle">
+                                        <p style="padding-top:5px;text-align: center;">Page 18</p>
+                                    </div>-->
+                                </div>
+                                <div>
+                                    <p class="pt-2  mb-2 sub_heading" ><b>Commodo Alut Gillorem Consequat</b></p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus dolor vehicula, mattis leo. Nam eget laoreet elit. Morbi malesuada nisl quis varius mollis. Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel risus ut faucibus. Aliquam rhoncus nulla sit amet.</p>
+                                    <hr style="border-width: 2px;background-color: gray;">
+                                            <p  class="p-2 text-center" style="color:rgb(190, 6, 6); font-size: 13px;">
+                                    <b>     Urna ac vestibulum 
+                                        eros dui bibendum arc
+                                        vitae  nisl risus 
+                                        convallis mollis ipsu
+                                        fermentum erat as
+                                        tatte vilet. 
+                                    </b></p>
+
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-4 ">
+                                <div class="red_header">
+                                    <b>25 12 34</b>
+                                </div>
+                                <div class="pic">
+                                    <!--<div class="circle" style="position:relative;top:50px;left:165px;" >
+                                        <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                        <span style="text-align: center;position: relative;top:5px; left:6px">22</span>
+                                    </div>
+                                    <div class="circle">
+                                        <p style="padding-top:5px;text-align: center;">Page 22</p>
+                                    </div>-->
+                                </div>
+                                <div>
+                                    <p class="pt-2  mb-2 sub_heading" ><b>Lorem Commodo Consequat</b></p>
+                                    <p class="py-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus. </p>
+                                    <p >Nullam eget fermentum erat, nec congue metus. Integer sed libero faucibus, faucibus felis efficitur, sagittis dolor. Vestibulum ornare, urna ac vestibulum dignissim, eros dui bibendum arcu, vitae luctus nisl risus in sapien. Suspendisse orci ipsum, laoreet eget fringilla non, venenatis ut ex. Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                    <p>Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel Donec a ornare tellus, hendrerit pretium lorem.Quisque risus arcu, tempus sed sem eget, vulputate sodales tellus. Maecenas interdum erat a convallis efficitur.</p>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+               
+                <div class="tab-pane" id="page2">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 p-4 m-auto" style="background-color: white;">
+                            <div class="row">
+                                <div class="col-5  col-md-7 col-lg-8 col-xl-9 ">
+                                    <p style="font-size: 10px;margin:0px;"><b>25 lorem ipsum</b></p>
+                                </div>
+                                <div class="col-7 col-md-5 col-lg-4 col-xl-3 ">
+                                    <p style="font-size: 10px;margin:0px;"><b>lorem ipsum dolor sit ametquis </b></p>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class="col-sm-12 col-xs-12">
+                                    <hr  class="hr">
+                                    <p style="padding:0px;margin:0px;" class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius orci et risus malesuada, nec tristique arcu volutpat.Vestibulum ultrices dictum nunc in aliquet. Etiam quis vestibulum purus.. Mauris dictum congue lectus.</p>
+                                    <hr class="hr">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-sm-8">
+                                    <p class="pt-2 mb-2 " style="font-size:17px;line-height:1.1;">
+                                        <b>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elite donec, convallis mollis ipsum luctus dolor vehicula
+                                        </b>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6">
+                                            <p class="py-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus. </p>
+                                            <p >Nullam eget fermentum erat, nec congue metus. Integer sed libero faucibus, faucibus felis efficitur, sagittis dolor. Vestibulum ornare, urna ac vestibulum dignissim, eros dui bibendum arcu, vitae luctus nisl risus in sapien. Suspendisse orci ipsum, laoreet eget fringilla non, venenatis ut ex. Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                            <p>Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel Donec a ornare tellus, hendrerit pretium lorem.Quisque risus arcu, tempus sed sem eget, vulputate sodales tellus. Maecenas interdum erat a convallis efficitur.</p>
+                                        </div>
+                                        <div class="col-6 col-sm-6">
+                                            <p class="py-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus. </p>
+                                            <p >Nullam eget fermentum erat, nec congue metus. Integer sed libero faucibus, faucibus felis efficitur, sagittis dolor. Vestibulum ornare, urna ac vestibulum dignissim, eros dui bibendum arcu, vitae luctus nisl risus in sapien. Suspendisse orci ipsum, laoreet eget fringilla non, venenatis ut ex. Donec a ornare tellus, hendrerit pretium lorem.</p>
+                                            <p>Aliquam sit amet metus ac augue fermentum ornare. Maecenas ultricies vel Donec a ornare tellus, hendrerit pretium lorem.Quisque risus arcu, tempus sed sem eget, vulputate sodales tellus. Maecenas interdum erat a convallis efficitur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-4 col-sm-4">
+                                    <div class="pic" style="position: relative;top:12px;height: 100%;">
+                                       <!--<div class="circle" >
+                                            <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                            <span style="text-align: center;position: relative;top:5px; left:6px">31</span>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <hr class="hr">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="pt-2 mb-2 " style="font-size:17px;line-height:1.1;">
+                                        <b>
+                                            Sed pellentesque, urna vitae varius laoreet, risus justo feugiat quam, sit amet placerat sem ligula at tellus.
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                <div class="col-4 col-sm-4">
+                                    <p class="my-0 py-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis mollis ipsum. Curabitur a lacus malesuada, luctus dolor vehicula, mattis leo. Nam eget laoreet elit. Morbi malesuada nisl quis.</p>
+                                    <p class="my-0 py-0">Quisque risus arcu, tempus sed sem eget, vulputate sodales tellus. Maecenas interdum erat a convallis efficitur. Etiam ac eleifend ligula, quis egestas metus. Sed varius mattis elit ac vehicula.</p>
+                                </div>
+                                <div class="col-8 col-sm-8">
+                                    <div class="red_header" style="position: absolute;top: -6px;" ><b>25 12 34</b></div>
+                                    <div class="pic" style="height: 90%; width:100%;">
+                                        <!--<div class="circle" style="position: absolute;bottom:20px;right:25px;" >
+                                            <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                            <span style="text-align: center;position: relative;top:5px; left:6px">42</span>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <hr class="hr mt-2">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="p-3 mb-2" style="font-size:17px;line-height:1.1;">
+                                        <b>
+                                            Vivamus aliquet quis nunc sed malesuada. Curabitur lectus mauris, vestibulum sed ante ut, congue convallis lorem. Suspendisse potenti. In ullamcorper metus sit amet lobortis iaculis apsum sit
+                                        </b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-sm-4">
+                                    <div class="red_header ml-3" style="position:static">
+                                        <b>Today 01</b>
+                                    </div>
+                                    <div>
+                                        <p class="px-3 pt-2">Curabitur porttitor turpis sit amet iaculis gravida. Sed vel nibh euismod, fermentum ligula vitae, rutrum libero. Vestibulum vitae mauris justo. Aliquam ut erat non augue aliquam vestibulum. Quisque sed aliquet neque, id vestibulum sem. Sed feugiat venenatis lorem eu lacinia. Nulla a velit tristique, ullamcorper tellus vitae, egestas massa. Maecenas pellentesque ut ex eu tristique. Cras in lacus id ex scelerisque finibus.Cras tristique vel odio tempor volutpat. Sed semper odio venenatis feugiat luctus.</p>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-4">
+                                    <div  style="position: relative;top:-10px;">
+                                        <hr class="hr my-2 hr1" >
+                                        <p class="px-3 my-2"  style="color:rgb(190, 6, 6);font-size:0.7em;"><b>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor</b></p>
+                                        <hr class="hr my-2 hr2">
+                                        <p class="mt-3">
+                                            Aliquam ut erat non augue aliquam vestibulum. Quisque sed aliquet neque, id vestibulum sem. Sed feugiat venenatis lorem eu lacinia. Nulla a velit tristique, ullamcorper tellus vitae, egestas massa. Maecenas pellentesque ut ex eu tristique. Cras in lacus id ex scelerisque finibus.Proin massa nulla, volutpat vel rutrum ut, rhoncus eu urna. Etiam efficitur lorem in enim tincidunt, ut convallis turpis malesuada.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-4">
+                                    <div class="pic" style="height: 90%; width:100%; position: relative;top:-5px;left:-10px;">
+                                        <!--<div class="circle" >
+                                            <span style="text-align: center;position: relative;top:5px;">Page</span>
+                                            <span style="text-align: center;position: relative;top:5px; left:6px">31</span>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+
+</html>
